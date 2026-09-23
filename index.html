@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudScale — Modern Cloud & DevOps Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span>CloudScale</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="#workflow" class="nav-link">Workflow</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+        <div class="nav-mobile-actions">
+          <a href="#login" class="btn btn-secondary btn-sm">Log in</a>
+          <a href="#get-started" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#login" class="btn btn-ghost">Log in</a>
+        <a href="#get-started" class="btn btn-primary">Get Started</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Next-Gen DevOps Automation 2.0</span>
+            <span class="badge-arrow">→</span>
+          </div>
+
+          <h1 class="hero-title">
+            Deploy faster. <br />
+            Scale effortlessly. <br />
+            <span class="gradient-text">Zero friction.</span>
+          </h1>
+
+          <p class="hero-description">
+            Accelerate software delivery with an intelligent infrastructure platform.
+            Automate CI/CD pipelines, orchestrate Kubernetes clusters, and monitor in real-time.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#get-started" class="btn btn-primary btn-lg">
+              Start Free Trial
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#demo" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Watch 2-min Demo
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <p>Trusted by engineering teams at</p>
+            <div class="trust-logos">
+              <span class="brand-item">⚡ ACME Corp</span>
+              <span class="brand-item">▲ VORTEX</span>
+              <span class="brand-item">● NEXUS AI</span>
+              <span class="brand-item">✦ QUANTUM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="window-card">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="window-title">cloudscale-pipeline.yaml</div>
+              <div class="window-status">
+                <span class="pulse-indicator"></span> Live Deploy
+              </div>
+            </div>
+
+            <div class="code-preview">
+              <pre><code><span class="code-comment"># Multi-region cluster deployment</span>
+<span class="code-keyword">pipeline</span>:
+  <span class="code-prop">name</span>: prod-deploy-v3
+  <span class="code-prop">trigger</span>: git:push:main
+  <span class="code-prop">stages</span>:
+    - <span class="code-prop">name</span>: test & scan
+      <span class="code-prop">status</span>: <span class="code-success">passed (42s)</span>
+    - <span class="code-prop">name</span>: build-container
+      <span class="code-prop">image</span>: gcr.io/cloudscale/app:latest
+    - <span class="code-prop">name</span>: multi-region-deploy
+      <span class="code-prop">regions</span>: [us-east-1, eu-central-1, ap-south-1]
+      <span class="code-prop">strategy</span>: zero-downtime-canary
+      <span class="code-prop">status</span>: <span class="code-success">active 100% ✓</span></code></pre>
+            </div>
+
+            <!-- Floating metric cards -->
+            <div class="floating-card stat-pill top-right">
+              <div class="stat-icon green">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="pill-label">Build Success</div>
+                <div class="pill-val">99.98%</div>
+              </div>
+            </div>
+
+            <div class="floating-card stat-pill bottom-left">
+              <div class="stat-icon purple">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <div class="pill-label">Deploy Latency</div>
+                <div class="pill-val">4.2s (8x Faster)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3 class="stat-number">10M+</h3>
+            <p class="stat-desc">Monthly automated builds</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number">99.99%</h3>
+            <p class="stat-desc">Guaranteed platform uptime</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number">75%</h3>
+            <p class="stat-desc">Reduction in infrastructure costs</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number">250k+</h3>
+            <p class="stat-desc">Global DevOps engineers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="subheading">Engineered for Reliability</span>
+          <h2 class="section-title">Everything you need to deliver production software</h2>
+          <p class="section-subtitle">
+            Say goodbye to fragile scripts and manual rollbacks. CloudScale unifies your entire pipeline.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Declarative Infrastructure</h3>
+            <p class="feature-text">
+              Provision reproducible cloud environments with modern IaC templates. Version-controlled, audited, and immutable.
+            </p>
+            <a href="#" class="feature-link">Learn more →</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Instant Zero-Downtime Rollouts</h3>
+            <p class="feature-text">
+              Automated Canary, Blue/Green, and Rolling deployments with auto-rollback on metric threshold spikes.
+            </p>
+            <a href="#" class="feature-link">Learn more →</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-teal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Continuous Security & Compliance</h3>
+            <p class="feature-text">
+              Deep container vulnerability scanning, secrets detection, and SOC2/HIPAA compliance guardrails built right in.
+            </p>
+            <a href="#" class="feature-link">Learn more →</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Full-Stack Observability</h3>
+            <p class="feature-text">
+              Correlated metrics, structured logs, and distributed tracing across your microservices with intelligent alerting.
+            </p>
+            <a href="#" class="feature-link">Learn more →</a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-rose">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Kubernetes Native</h3>
+            <p class="feature-text">
+              Native GitOps integration for Helm, Kustomize, and ArgoCD with painless multi-cluster orchestration.
+            </p>
+            <a href="#" class="feature-link">Learn more →</a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Ephemeral Environments</h3>
+            <p class="feature-text">
+              Spin up lightweight on-demand preview environments for every pull request automatically.
+            </p>
+            <a href="#" class="feature-link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="workflow" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="subheading">Simple Setup</span>
+          <h2 class="section-title">How CloudScale fits into your stack</h2>
+          <p class="section-subtitle">Get from repository to live edge infrastructure in three straightforward steps.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Connect Git Repo</h3>
+            <p class="step-text">Link your GitHub, GitLab, or Bitbucket repository in just one click with granular permissions.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Configure Pipeline</h3>
+            <p class="step-text">Use smart auto-detection templates or fine-tune custom build configs in clean declarative YAML.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Deploy & Scale</h3>
+            <p class="step-text">Trigger automated pipelines on push, monitor health metrics, and scale seamlessly globally.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="subheading">User Stories</span>
+          <h2 class="section-title">Loved by developers worldwide</h2>
+          <p class="section-subtitle">Here is what engineering leaders have to say about building with CloudScale.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="rating">★★★★★</div>
+            <p class="quote">
+              "CloudScale cut our deployment times from 45 minutes to under 3 minutes. It completely transformed our team's engineering velocity."
+            </p>
+            <div class="author-info">
+              <div class="avatar">SC</div>
+              <div>
+                <div class="author-name">Sarah Chen</div>
+                <div class="author-role">VP of Engineering at CloudPulse</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card featured">
+            <div class="rating">★★★★★</div>
+            <p class="quote">
+              "The automatic canary rollouts and preview environments saved us from multiple production incidents. It's the most dependable DevOps tool we've used."
+            </p>
+            <div class="author-info">
+              <div class="avatar">MR</div>
+              <div>
+                <div class="author-name">Marcus Rodriguez</div>
+                <div class="author-role">Lead DevOps Architect at DataSphere</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating">★★★★★</div>
+            <p class="quote">
+              "The developer experience is unmatched. Clean interface, top-notch CLI, and world-class observability right out of the box."
+            </p>
+            <div class="author-info">
+              <div class="avatar">EJ</div>
+              <div>
+                <div class="author-name">Elena Jensen</div>
+                <div class="author-role">Staff Platform Engineer at FinTech Ops</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner" id="get-started">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to streamline your DevOps pipeline?</h2>
+            <p class="cta-text">
+              Join thousands of teams deploying faster and safer today. 14-day free trial, no credit card required.
+            </p>
+            <form class="cta-form" id="signup-form" onsubmit="event.preventDefault(); alert('Thank you for getting started!');">
+              <input type="email" placeholder="Enter your work email" required class="cta-input" />
+              <button type="submit" class="btn btn-primary">Get Started Free</button>
+            </form>
+            <div class="cta-perks">
+              <span>✓ Instant setup</span>
+              <span>✓ No credit card</span>
+              <span>✓ Cancel anytime</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span>CloudScale</span>
+        </a>
+        <p class="footer-bio">
+          Next-generation cloud automation and continuous delivery platform for hyper-growth engineering teams.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.65 1.65 0 1 0 0 3.3 1.65 1.65 0 0 0 0-3.3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Product</h4>
+          <ul>
+            <li><a href="#features">CI/CD Pipelines</a></li>
+            <li><a href="#features">Kubernetes Deploy</a></li>
+            <li><a href="#features">Ephemeral Envs</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">CLI Guide</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">Status Page</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Security & Trust</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 CloudScale Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
